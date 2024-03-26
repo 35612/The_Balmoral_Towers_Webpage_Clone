@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <style>
+      *{
+        font-family: Montserrat,Arial,Helvetica,sans-serif;
+    }
+
+    body{
+      overflow-x: hidden;
+    }
+    
+    .nav_items{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        color: #555050;
+        transition: .3s all ease;
+    }
+    
+    .nav_items:hover{
+        color: brown;
+    }
+    
+    .gold-btn{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(174, 156, 57);
+        border-radius: 30px;
+        transition: .3s all ease;
+    }
+    
+    .gold-btn:hover{
+        background-color: rgb(187, 168, 63);
+    
+    }
+    
+    #navbar{
+        box-shadow: 5px 5px 20px black;
+    }
+
+    #im
+    {
+      height: 500px;
+      width: auto;
+    }
+
+    form
+    {
+      margin: auto;
+      padding: 40px;
+      border-bottom-left-radius: 15px solid #555050;
+    }
+
+    .form-select
+    {
+      border: none;
+      border-radius: 0;
+      border-bottom: 2px solid rgb(250, 37, 37);
+      background-color: transparent;
+    }
+
+    .form-select1
+    {
+      border: none;
+      border-radius: 0;
+      border-bottom: 2px solid rgb(250, 37, 37);
+      background-color: rgba(0, 0, 0, 0.60) !important;
+    }
+
+
+    .myFrame 
+    {
+      border: none;
+      border-radius: 0;
+      border-bottom: 2px solid rgb(250, 37, 37);
+      background-color: transparent;
+    }
+
+    .myFrame1 
+    {
+      border: none;
+      border-radius: 0;
+      border-bottom: 2px solid rgb(250, 37, 37);
+      background: transparent !important;;
+    }
+
+    #carpet
+    {
+      background-color: azure;
+    }
+
+    /*Positioning*/
+   @media only screen and (min-width:992px){
+     #frm-1{
+       position: relative;
+       top: -5rem;
+       right: 0;
+     }
+
+   }
+
+   .parallex-header
+   {
+    background: #000;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.60)
+    ),
+    url(bg-img.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .p1{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.60)
+    ),
+    url(back1.png);
+    background-position: center;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    padding: 50px;
+   }
+
+   .card{
+    transition: 0.3s all ease;
+    background-size: 100%;
+   }
+
+   .card:hover{
+    background-size: 110%;
+   }
+
+   .p2
+   {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.60)
+    ),
+    url(Gymnasium.png);
+    background-position: center;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    padding: 50px;
+   }
+
+   .p3
+   {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.60)
+    ),
+    url(pool.png);
+    background-position: center;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    padding: 50px;
+   }
+
+   .p4
+   {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.60)
+    ),
+    url(Squash-court.png);
+    background-position: center;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    padding: 50px;
+   }
+
+   .p5
+   {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.60)
+    ),
+    url(b11.png);
+    background-position: center;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    padding: 50px;
+   }
+
+   .p5
+   {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.60)
+    ),
+    url(coofe.png);
+    background-position: center;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    padding: 50px;
+   }
+
+   .p6
+   {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.60)
+    ),
+    url(banquete.jpg);
+    background-position: center;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    padding: 50px;
+   }
+
+   .p7
+   {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.60)
+    ),
+    url(b12.png);
+    background-position: center;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    padding: 50px;
+   }
+
+   .back
+   {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.60)
+    ),
+    url(enquire-bg.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-position: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .header-content
+   {
+    padding: 120px 0 80px 0;
+   }
+
+   #icon
+   {
+    height: 30px;
+    width: 30px;
+    color: #000;
+    transition: 0.3s all ease;
+   }
+
+   #icon:hover
+   {
+    height: 35px;
+    width: 35px;
+    color: #000;
+    background-color: brown;
+    border-radius: 50%;
+   }
+
+   #right
+   {
+    height: 30px;
+    width: 30px;
+   }
+
+   li{
+    list-style: none;
+    padding: 3px;
+   }
+
+   #list{
+    color:white;
+    font-size: 15px;
+   }
+
+   li::before{
+    content: "\203A";
+   }
+
+   .content
+   {
+    width: 100vh;
+   }
+
+   .st-btn
+   {
+    background-color:  rgb(174, 156, 57);
+    border:none;
+   }
+
+   input::placeholder
+   {
+    color: white;
+    background: transparent;
+   }
+
+   .myFrame1::placeholder,.form-select1::placeholder{
+    background: transparent;
+    color: #fff; 
+   }
+
+   .form-select1 option {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .card .card-content{
+    position: relative;
+    opacity:0;
+    margin-top:-140px;
+    visibility: hidden;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .card:hover .card-content{
+    opacity:1;
+    margin-top: 0px;
+    visibility: visible;
+  }
+
+  .bgshadow
+  {
+    box-shadow: 0 0 1rem black;
+  }
+
+  .caro{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+ 
+  </style>
+
+
+
+</head>
+<body>
+    <section class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+              <img class="ms-4 mt-2 mb-2" height="45rem" src="kasturi-logo.png" alt="kasturiLogo">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navMain">
+                  <div class="navbar-nav gap-2">
+                      <a href="#" class=" nav-link  nav_items">About us</a>
+                      <a href="#" class=" nav-link  nav_items">Project Highlights</a>
+                      <a href="#" class=" nav-link  nav_items">Amenities</a>
+                      <a href="#" class=" nav-link  nav_items">Project Showcase</a>
+                      <a href="#" class=" nav-link  nav_items">Nearest Locations</a>
+                      <a href="tel: +9186985652" class="btn gold-btn nav-link text-light">Call Us</a>
+                      <a href="#" class="btn gold-btn nav-link text-light">Enquire Now</a>
+                  </div>
+              </div>
+          </div>
+      </nav>
+    </section>
+
+
+    <!-- Carousel Section -->
+
+
+    <section id="carousel">
+      <div id="carouselExampleAutoplaying" class="carousel slide m-0" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"  data-bs-interval="2000">
+            <img src="Heights.jpg" class="d-block w-100 img-fluid" style="max-width:100%; height:auto;" alt="" id="im">
+          </div>
+          <div class="carousel-item"  data-bs-interval="2000">
+            <img src="bedroom.jpg" class="d-block w-100 img-fluid" style="max-width:100%; height:auto;" alt="" id="im">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" style="justify-content:start;" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" style="background-color:rgb(0,0,47);" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" style="justify-content:end;" data-bs-slide="next">
+        <span class="carousel-control-next-icon" style="background-color:rgb(0,0,47);" aria-hidden="true"></span>
+      </button>
+    </section>
+    
+    <section>
+      <div class="row mt-5">
+        <div class="col-lg-8 col-sm-12">
+          <div class="container ms-3 ps-5">
+            <h2 class="text-heading-left fw-bold">The Balmoral Towers - 3 & 4 BHK Luxury Apartments in Balewadi</h2>
+          </div>
+          <div class="container ms-3 ps-5">
+            <p>A distinct offering from The Balmoral Collection, The Balmoral Towers offers a lifestyle that has been scrupulously put together with carefully chosen specifications & features to help build a vibrant community of like-minded families.</p>
+          </div>
+          <div class="container ms-3 ps-5">
+            <p>Discover a life towering above the rest in a pulsating neighborhood with some of the finest infrastructure & lifestyle facilities. Enter a world of sophistication at The Balmoral Towers, Balewadi and experience the allure of spaces masterfully tailored to suit urban lifestyles.</p>
+          </div>
+          <div class="container ms-3 ps-5">
+            <p>Presenting a lifestyle that comes with a host of perks and privileges that extend past your front door and encompass a range of exclusive amenities for you to indulge in.</p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-sm-12">
+          <div  id="frm-1"class="container bg-body-secondary lh-lg" style="margin-right: 5rem; height:450px;">
+            <form action="">
+              <div class="text-center">
+                <h2>Enquire Now</h2>
+              </div>
+              <div class="mx-2 my-2 "> 
+                <input type="text" placeholder="Full Name" class="myFrame bg-body-secondary form-control">
+              </div>
+              <div class="mx-2 my-2 ">
+                <input type="tel" placeholder="Phone Number" class="myFrame bg-body-secondary form-control">
+              </div>
+              <div class="mx-2 my-2">
+                <input type="email" placeholder="Email" class="myFrame bg-body-secondary form-control">
+              </div>
+              <div class="mx-2 my-2">
+                <select class="form-select bg-body-secondary">
+                  <option selected>Which configuration you are looking at</option>
+                    <option value="1">3BHK - starting from Rs.1.98Cr* and onwards</option>
+                    <option value="2">4BHK - starting from Rs.2.05Cr* and onwards</option>
+                  </option>
+                </select>
+              </div>
+              <div class="mx-2 my-2">
+                <select class="form-select bg-body-secondary">
+                  <option selected>How would you prefer to connect with us</option>
+                    <option value="1">I want to schedule a site visit</option>
+                    <option value="2">Call me for more details</option>
+                  </option>
+                </select>
+              </div>
+              <div class="text-center mt-4">
+                <button type="button" class="btn btn-success rounded-5 st-btn">Enquire Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Carpet Text Image -->
+
+
+    <section id="carpet">
+      <div class="text-center m-5 fw-bold">
+        <h2>Carpet Area</h2>
+      </div>
+      <div>
+        <div class="row m-0">
+          <div class="col-lg-6 text-center">
+            <h3>3BHK</h3>
+            <p>115.66 sq. mtr.</p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <h3>4BHK</h3>
+            <p>146.84 sq. mtr.</p>
+          </div>
+          <p class="text-center">*Area mentioned above is approximate carpet area as per RERA.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Download Brochure -->
+
+    <section>
+      <button type="button" class="st-btn text-light fw-bold" data-bs-toggle="modal" data-bs-target="#myModal" style="position: fixed ; top: 42%; right: -69px; transform: rotate(270deg); z-index: 1;">
+        Download Brochure
+      </button>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">The Balmora Heights</h5>
+            <button class="close" data-bs-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" style="background-color:#000;">
+              <div class="text-light">
+                <h2 class="text-center">Enquire Now</h2>
+              </div>
+              <div class="mx-2 my-2"> 
+                <input type="text" placeholder="Full Name*" class="myFrame1 text-light form-control">
+              </div>
+              <div class="mx-2 my-2">
+                <input type="tel" placeholder="Phone Number*" class="myFrame1 text-light form-control">
+              </div>
+              <div class="mx-2 my-2">
+                <input type="email" placeholder="Email*" class="myFrame1 text-light form-control">
+              </div>
+              <div class="mx-2 my-2">
+                <select class="form-select1 form-control text-light myFrame1">
+                  <option selected>Which configuration you are looking at*</option>
+                    <option value="1">3BHK - starting from Rs.1.98Cr* and onwards</option>
+                    <option value="2">4BHK - starting from Rs.2.05Cr* and onwards</option>
+                  </option>
+                </select>
+              </div>
+              <div class="mx-2 my-2">
+                <select class="form-select1 form-control text-light">
+                  <option selected>How would you prefer to connect with us*</option>
+                    <option value="1">I want to schedule a site visit</option>
+                    <option value="2">Call me for more details</option>
+                  </option>
+                </select>
+              </div>
+              <div class="text-center mt-4">
+                <button type="button" class="btn btn-success rounded-5 st-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Parallex Header -->
+
+
+    <section>
+      <div class="parallex-header">
+        <div class="container">
+          <div class="header-content">
+            <div class="row m-0">
+              <div class="col-lg-4 text-center text-light">
+                <h3>Project Highlights</h3>
+              </div>
+              <div class="col-lg-4 text-left text-light">
+                <div class="container">
+                  <div class="col d-flex">
+                    <img width="50" height="50" alt="" nitro-lazy-src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/dining-table-1.png" class=" ls-is-cached lazyloaded" decoding="async" nitro-lazy-empty="" id="MzMyOjYxOQ==-1" src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/dining-table-1.png">
+                    <p class="px-2">Large format porcelain flooring in living, dining area and passages</p><br>
+                  </div><br><br>
+                  <div class="col d-flex">
+                    <img width="50" height="50" alt="" nitro-lazy-src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/bathroom-1.png" class=" ls-is-cached lazyloaded" decoding="async" nitro-lazy-empty="" id="MzMyOjIyMDc=-1" src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/bathroom-1.png">
+                    <p class="px-2">Luxurious bathrooms with best-in-class imported fittings at Balmoral Towers.</p><br>
+                  </div><br><br>
+                  <div class="col d-flex">
+                    <img width="50" height="50" alt="" nitro-lazy-src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/lighting-1.png" class=" lazyloaded" decoding="async" nitro-lazy-empty="" id="MzMyOjM4Mzg=-1" src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/lighting-1.png">
+                    <p class="px-2">Lighting and curtain control automation enabled homes</p><br>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 text-left text-light">
+                <div class="container">
+                  <div class="col d-flex">
+                    <img width="50" height="50" alt="" nitro-lazy-src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/bedroom-1.png" class=" lazyloaded" decoding="async" nitro-lazy-empty="" id="MzMyOjE0MDU=-1" src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/bedroom-1.png">
+                    <p class="px-2">Spacious master bedrooms with engineered wood alike flooring at Balmoral Towers.</p><br>
+                  </div><br><br>
+                  <div class="col d-flex">
+                    <img width="50" height="50" alt="" nitro-lazy-src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/kitchen-1.png" class=" lazyloaded" decoding="async" nitro-lazy-empty="" id="MzMyOjMwMDM=-1" src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/kitchen-1.png">
+                    <p class="px-2">Imported high quality modular kitchens fully fitted with built-in appliances like microwave, oven, dishwasher etc.</p><br>
+                  </div><br><br>
+                  <div class="col d-flex">
+                    <img width="50" height="50" alt="" nitro-lazy-src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/glass-1.png" class=" lazyloaded" decoding="async" nitro-lazy-empty="" id="MzMyOjQ2MzI=-1" src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/02/glass-1.png">
+                    <p class="px-2">Premium & large aluminium window systems with specialised high performance glass.</p><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Amentities -->
+
+    <section>
+      <div class="container-fluid mt-5">
+        <div class="text-center">
+          <h2>Amentities</h2>
+        </div>
+        <div class="d-flex flex-row justify-content-center flex-wrap gap-3 pt-3">
+            <div class="card p1">
+              <p class="text-light text-center justify-content-center">Swimming Pool + Kids Pool</p>
+            </div>
+            <div class="card p2">
+              <p class="text-light text-center justify-content-center">State Of The Art Gymnasium</p>
+            </div>
+            <div class="card p3">
+              <p class="text-light text-center justify-content-center">Indoor Badminton Court</p>
+            </div>
+            <div class="card p4">
+              <p class="text-light text-center justify-content-center">Squash Court</p>
+            </div>
+            <div class="card p5">
+              <p class="text-light text-center justify-content-center">Billiards Room</p>
+            </div>
+            <div class="card p6">
+              <p class="text-light text-center justify-content-center">Community Center + Banquette Zone</p>
+            </div>
+            <div class="card p7">
+              <p class="text-light text-center justify-content-center">Executive Workspaces</p>
+            </div>
+        </div>
+      </div>
+      <div class="p-3 text-center">
+        <button class="btn btn-primary st-btn rounded-5 text-center" data-bs-toggle="modal" data-bs-target="#myModal">Download Brocher</button>
+        <div class="modal fade" id="myModal" data-backdrop="static">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">The Balmora Heights</h5>
+                <button class="close" data-bs-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="" style="background-color:#000;">
+                  <div class="text-light">
+                    <h2 class="text-center">Enquire Now</h2>
+                  </div>
+                  <div class="mx-2 my-2"> 
+                    <input type="text" placeholder="Full Name*" class="myFrame1 text-light form-control">
+                  </div>
+                  <div class="mx-2 my-2">
+                    <input type="tel" placeholder="Phone Number*" class="myFrame1 text-light form-control">
+                  </div>
+                  <div class="mx-2 my-2">
+                    <input type="email" placeholder="Email*" class="myFrame1 text-light form-control">
+                  </div>
+                  <div class="mx-2 my-2">
+                    <select class="form-select1 form-control text-light myFrame1">
+                      <option selected>Which configuration you are looking at*</option>
+                        <option value="1">3BHK - starting from Rs.1.98Cr* and onwards</option>
+                        <option value="2">4BHK - starting from Rs.2.05Cr* and onwards</option>
+                      </option>
+                    </select>
+                  </div>
+                  <div class="mx-2 my-2">
+                    <select class="form-select1 form-control text-light">
+                      <option selected>How would you prefer to connect with us*</option>
+                        <option value="1">I want to schedule a site visit</option>
+                        <option value="2">Call me for more details</option>
+                      </option>
+                    </select>
+                  </div>
+                  <div class="text-center mt-4">
+                    <button type="button" class="btn btn-success rounded-5 st-btn">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br><br>
+
+    <!-- Inside the home section -->
+
+    <section>
+      <div class="container-fluid text-light" style="background-color:#000">
+        <div class="text-center p-5">
+          <h2>Inside the Home</h2>
+        </div>
+        <div class="container-fluid">
+          <div class="row m-0 gap-2">
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-2">
+              <h3>Living &Dining</h3><br>
+              <span>
+                <ul id="list">
+                  <li>Large format porcelain flooring in living room, dining area and passages</li>
+                  <li>False ceiling with concealed lighting</li>
+                  <li>High-quality interior paint</li>
+                  <li>High-quality interior paint</li>
+                </ul>
+              </span>
+            </div>
+            <div class="col-lg-2">
+              <h3>Bedroom</h3><br>
+              <span>
+                <ul id="list">
+                  <li>Engineered wood alike flooring in master bedroom</li>
+                  <li>Porcelain flooring in other bedrooms</li>
+                </ul>
+              </span>
+            </div>
+            <div class="col-lg-2">
+              <h3>Bathroom</h3><br>
+              <span>
+                <ul id="list">
+                  <li>Fully finished bathrooms with best-in-class imported fittings</li>
+                  <li>Water heaters, accessories & shower enclosures</li>
+                  <li>Rimless antibacterial finish WC fittings</li>
+                </ul>
+              </span>
+            </div>
+            <div class="col-lg-2">
+              <h3>Kitchen</h3><br>
+              <span>
+                <ul id="list">
+                  <li>Imported high quality designer modular kitchens fully fitted with built-in appliances like microwave, oven, dishwasher etc</li>
+                  <li>Piped gas</li>
+                  <li>Well-designed utility area with retractable easy dry system and provision for washer/dryer</li>
+                </ul>
+              </span>
+            </div>
+            <div class="col-lg-2">
+              <h3>Common Specifications</h3><br>
+              <span>
+                <ul id="list">
+                  <li>VRV air-conditioning with ceiling cassette units</li>
+                  <li>Lighting and curtain control automation enabled homes</li>
+                  <li>Fiber-to-home high-speed internet provision, DTH</li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel 3D Slicer -->
+
+      <div class="d-flex justify-content-center align-content-center m-5">
+        <iframe src="index1.html" frameborder="0" style="height:100vh; width:100vw; "></iframe>
+      </div>
+
+    <!-- Nearest Location Section -->
+
+
+    <section>
+      <div class="container-fluid">
+        <div class="text-center m-5">
+          <h2>Nearest Locations</h2>
+        </div>
+        <div class="row flex-row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="row flex-column m-0">
+              <div class="col d-flex" style="padding-left:50px;">
+                <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
+                  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
+                </svg>
+                <b class="ps-1">Schools & Colleges</b>
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Bharati Vidyapeeth – 700 mtrs
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                CM International school – 800 mtrs
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                The Orchid school – 2.3 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Daffodil International School – 1.6 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Vibgyor High School – 3.8 kms
+              </div>
+              <br>
+              <div class="col d-flex pt-3" style="padding-left:50px;">
+                <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-h-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-5-3.998H9.67v3.322H6.33V4.002H5V12h1.33V8.455h3.34V12H11z"/>
+                </svg>
+                <b class="ps-1">Hospitals</b>
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Ashwini Hospital – 1.3kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Shashwat Hospital – 2.2 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Jupiter Hospital – 3.0 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Sanjivani Vitalife Hospital – 1.8kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Lifeline Hospital – 2.4kms
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 text-center">
+            <img src="map.jpg" class="img-fluid" alt="" style="max-width:100%; height:auto;">
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="row flex-column m-0">
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                  <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+                </svg>
+                <b class="ps-1">Workplace & Connectivity</b>
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Cisco – 5.5 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                HCl Technologies – 6.3 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Siemens – 2.0 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Cummins – 1.8 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                TATA Technologies – 5.5 kms
+              </div>
+              <div class="col d-flex pt-3" style="padding-left:50px;">
+                <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+                <b class="ps-1">Malls & Market</b>
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Westend Mall – 6.5 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Phoenix market city wakad – 4.5 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                D-Mart – 2.6 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Balewadi High Street – 1.7 kms
+              </div>
+              <div class="col d-flex pt-2" style="padding-left:50px;">
+                <svg id="right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>
+                Xion mall Hinjewadi – 4.8 kms
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Addition -->
+
+    <!-- <section>
+      <div class="container-fluid d-flex flex-wrap" style="margin-top:150px; margin-bottom:150px;">
+        <div class="col-lg-3 col-sm-6 d-flex flex-wrap justify-content-center align-content-center p-2">
+          <div class="card card1 bgshadow justify-content-center align-content-center" style="width:18rem;">
+            <img src="coofe.png" class="bgshadow img-fluid p-4" alt="">
+            <div class="card-body bshadow card-content text-center">
+              <h5 class="card-title">Living and Dining</h5>
+              <p class="card-text">Large format porcelain flooring in living room, dining area and passages.</p>
+              <a href="#" class="btn btn-primary">Show Me</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-wrap justify-content-center align-content-center p-2">
+          <div class="card card2 bgshadow justify-content-center align-content-center" style="width:18rem">
+            <img src="b12.png" class="bgshadow img-fluid p-4" alt="">
+            <div class="card-body bshadow card-content text-center">
+              <h5 class="card-title">Bedroom</h5>
+              <p class="card-text">Engineered wood alike flooring in master bedroom. flooring in other bedrooms.</p>
+              <a href="#" class="btn btn-primary">Show Me</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-wrap justify-content-center align-content-center p-2">
+          <div class="card card3 bgshadow justify-content-center align-content-center" style="width:18rem">
+            <img src="b11.png" class="bgshadow img-fluid p-4" alt="">
+            <div class="card-body bshadow card-content text-center">
+              <h5 class="card-title">Bathroom</h5>
+              <p class="card-text">Fully finished bathrooms with best-in-class imported fittings, Water heaters.</p>
+              <a href="#" class="btn btn-primary">Show Me</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-wrap justify-content-center align-content-center p-2">
+          <div class="card card4 bgshadow justify-content-center align-content-center" style="width:18rem">
+            <img src="pool.png" class="bgshadow img-fluid p-4" alt="">
+            <div class="card-body bshadow card-content text-center">
+              <h5 class="card-title">Kitchen</h5>
+              <p class="card-text">VRV air-conditioning with ceiling cassette units, Lighting and curtain control.</p>
+              <a href="#" class="btn btn-primary">Show Me</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- Expanding Card  -->
+    <section>
+      <div class="container text-center" style="margin-top:50px;">
+          <div class="row m-0 align-items-start">
+              <div class="col-sm-12 col-lg-3 align-items-center d-flex flex-wrap justify-content-center p-2">
+                  <div class="card m-3 align-items-center d-flex bshadow" style="width: 18rem;">
+                      <img src="coofe.png" class="bgshadow img-fluid p-4" alt="...">
+                      <div class="card-body card-content" style="background-color:#fff;">
+                          <h5 class="card-title">Living and Dining</h5>
+                          <p class="card-text">Handpicked Italian botticino marble flooring in living, dining area and passages. .</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-lg-3 align-items-center d-flex flex-wrap justify-content-center p-2">
+                  <div class="card m-3 align-items-center d-flex bshadow" style="width: 18rem;">
+                      <img src="b12.png" class="bgshadow img-fluid p-4" alt="...">
+                      <div class="card-body card-content" style="background-color:#fff;">
+                          <h5 class="card-title">Kitchen</h5>
+                          <p class="card-text">Imported high quality modular kitchens fully fitted with built-in appliances</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-lg-3 align-items-center d-flex flex-wrap justify-content-center p-2">
+                  <div class="card m-3 align-items-center d-flex bshadow" style="width: 18rem;">
+                      <img src="b11.png" class="bgshadow img-fluid p-4"  alt="...">
+                      <div class="card-body card-content" style="background-color:#fff;">
+                          <h5 class="card-title">Bedroom</h5>
+                          <p class="card-text">Spacious master bedrooms with engineered wood alike flooring.</p>
+                      </div>
+                  </div>
+              </div>
+
+
+
+              <div class="col-sm-12 col-lg-3 align-items-center d-flex flex-wrap justify-content-center p-2">
+                  <div class="card m-3 align-items-center d-flex bshadow" style="width: 18rem;">
+                      <img src="pool.png" class="bgshadow img-fluid p-4" alt="...">
+                      <div class="card-body card-content" style="background-color:#fff;">
+                          <h5 class="card-title">Balcony</h5>
+                          <p class="card-text">Big and Spacious balcony with beautiful riverside view & marble flooring</p>
+                      </div>
+                  </div>
+              </div>
+
+
+
+          </div>
+      </div>
+    </section>
+
+
+    <!-- Kasturi logo Section -->
+
+    <section>
+      <div class="container-fluid mt-4">
+        <div class="text-center m-4">
+          <img src="kasturi-logo.png" class="img-fluid" style="max-width:100%; height:auto;" alt="">
+        </div>
+        <p style="padding-left: 20px; padding-right: 20px;">Kasturi Housing is one of Pune’s finest luxury real estate brand. Founded in 1999, the company has since successfully delivered over 3 million square feet of prime real estate and is currently developing another 5 million square feet for residential purposes. The company portfolio spans across high end and mid-segment residential developments, IT office buildings, and built-to-suit office spaces.</p>
+        <p style="padding-left: 20px; padding-right: 20px;"><b>Kasturi’s landmark projects include:</b><br>The Balmoral Estate is a high-end luxury residence in Baner,<br>
+          Zero-one, a commercial and IT building that houses leading IT companies, the Pune passport office and high end F&B <br>
+          Eon Homes, a 1500 apartment 22-acre residential project in Pune’s IT district of Hinjawadi.
+        </p>
+        <p style="padding-left: 20px; padding-right: 20px;">
+          Kasturi’s philosophy is to offer an end to end solution for any development that is undertaken, this includes architectural and design planning, construction, interior and furnishing services, home-technology and automation and facility management and maintenance services.
+        </p>
+        <p style="padding-left: 20px; padding-right: 20px;">
+          Kasturi Housing is also the recipient of awards, accolades and widespread appreciation for the delivery of exceptional quality and diligence in planning and execution.
+        </p>
+      </div>
+    </section>
+
+    <br><br>
+
+    <!-- Map section -->
+
+
+    <section>
+        <div class="row m-0">
+          <div class="col-lg-6 col-sm-12 text-center">
+            <img src="logo.png" alt="" class="p-4">
+            <p>Maharashtra Real Estate Regulatory Authority</p>
+            <p>The project has been registered via
+              MahaRERA registration number TOWER D – P52100047009, TOWER C – P52100047008
+              and is available on the website
+              https://maharera.mahaonline.gov.in
+              under registered projects</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="map-area">
+              <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.8322094612013!2d73.77258027470926!3d18.58160186730808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e29c8f1117%3A0x3d81fd51a6aa3a20!2sBalmoral%20Towers!5e0!3m2!1sen!2sin!4v1706774003938!5m2!1sen!2sin" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <!-- Enquiry Form -->
+
+    <section>
+      <div class="back container-fluid   ">
+        <div class="">
+          <div class="row m-0">
+            <div class="col-md-6">
+              <h2 class="ps-5 text-light mt-5">Contact</h2>
+              <div class="d-flex text-light" style="padding-left:50px; padding-top:50px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg>
+                <p class="ps-2">Survey No 45 (P),Balewadi, Pune – 411 045</p>
+              </div>
+              <div class="d-flex text-light" style="padding-left:50px; padding-top:10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                <p class="ps-2">+91 85520 07711</p>
+              </div>
+              <div class="d-flex text-light" style="padding-left:50px; padding-top:10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                </svg>
+                <p class="ps-2">sales@kasturi.com</p>
+              </div>
+              <div class="d-flex flex-wrap" style="padding-left:50px; padding-top:10px;">
+                <button class="btn btn-success rounded-5 st-btn"><a class="nav-link text-light" href="https://maps.app.goo.gl/Fbr2dX5omoyayzn28">Get Direction</a></botton>
+              </div>
+              <div class="d-flex flex-wrap" style="padding-left:100px; padding-top:10px;">
+                <img src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/09/TBT-TOWER-C.jpg" height="100px" width="100px" class="p-1" alt="">
+                <img src="https://cdn-jjbgf.nitrocdn.com/TJEXKVUyxgpAzCJyKhbKRAVonLPbVBAb/assets/images/optimized/rev-64342b7/www.kasturi.com/the-balmoral-towers/wp-content/uploads/2023/09/TBT-TOWER-D.jpg" height="100px" width="100px" class="p-1" alt="">
+              </div>
+            </div>
+           
+            <div class="col-md-6">
+              <form action="">
+                <div class="text-light">
+                  <h2 class="text-center">Enquire Now</h2>
+                </div>
+                <div class="mx-2 my-2"> 
+                  <input type="text" placeholder="Full Name*" class="myFrame1 text-light form-control">
+                </div>
+                <div class="mx-2 my-2">
+                  <input type="tel" placeholder="Phone Number*" class="myFrame1 text-light form-control">
+                </div>
+                <div class="mx-2 my-2">
+                  <input type="email" placeholder="Email*" class="myFrame1 text-light form-control">
+                </div>
+                <div class="mx-2 my-2">
+                  <select class="form-select1 form-control text-light myFrame1">
+                    <option selected>Which configuration you are looking at*</option>
+                      <option value="1">3BHK - starting from Rs.1.98Cr* and onwards</option>
+                      <option value="2">4BHK - starting from Rs.2.05Cr* and onwards</option>
+                    </option>
+                  </select>
+                </div>
+                <div class="mx-2 my-2">
+                  <select class="form-select1 form-control text-light">
+                    <option selected>How would you prefer to connect with us*</option>
+                      <option value="1">I want to schedule a site visit</option>
+                      <option value="2">Call me for more details</option>
+                    </option>
+                  </select>
+                </div>
+                <div class="text-center mt-4">
+                  <button type="button" class="btn btn-success rounded-5 st-btn">Request A Call</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <br><br><br><br>
+        </div>
+      </div>
+      </section>
+
+
+    <footer style="background-color:#333; color:white; text-align:center; padding:5px 0;" class="justify-content-center">
+      <p>Copyright 2023 | All Rights Reserved | Powered by Skovian Ventures</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
